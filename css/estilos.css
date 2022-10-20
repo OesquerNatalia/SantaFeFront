@@ -3,7 +3,7 @@ body{
     font-family: sans-serif;   
     margin: 5px;
     background-image: url(../img/imagenchaco.png);
-    opacity: 1;
+   
 }
 
 #titulo{
@@ -13,7 +13,7 @@ body{
     text-decoration:underline;
     text-align: center;
     font-family: 'Quattrocento Sans', sans-serif;
-    opacity: 10;
+    
 }
 .receta{
     background-color: blueviolet;
@@ -22,7 +22,7 @@ body{
     text-decoration:underline;
     font-size: 250%;
     text-align: center;
-    opacity: 1;
+    
 }
 .prepa{
     background-color: blueviolet;
@@ -31,7 +31,7 @@ body{
     font-size: 200%;
     text-decoration: underline;
     font-family: 'Quattrocento Sans', sans-serif;
-    opacity: 1;
+   
 }
 .texto{
     text-align: center;
@@ -39,13 +39,13 @@ body{
     font-size: 150%;
     font-weight: bold;
     font-family: 'Quattrocento Sans', sans-serif;
-    opacity: 1;
+   
 }
 .img{
     justify-content: center;
     height: 300px;
     width: 500px;
-    opacity: 1;
+    
 }
 .lista{
     font-size: 150%;
@@ -54,13 +54,13 @@ body{
     display: flex;
     justify-content: space-between;
     font-family: 'Quattrocento Sans', sans-serif;
-    opacity: 1;
+    
 }
 .contenedor{
    display: flex;
    margin: 0.2em;
    padding: auto;
-   opacity: 1;
+  
     
 }
 .frame{
@@ -68,7 +68,7 @@ body{
     padding: 0.1em;
     height: 530;
     width: 315;
-    opacity: 1;
+  
     
 }
 .copy{
@@ -76,6 +76,8 @@ body{
     font-family: 'Quattrocento Sans', sans-serif;
     opacity: 1;
 }
+
+    
 a{
-    opacity: 1;
+    text-align: right;
 }
