@@ -1,0 +1,60 @@
+body{
+    background:#FADBD8;
+    font-family: sans-serif;   
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin: 5px;
+}
+#titulo{
+    background-color: blueviolet;
+    color: rgb(17, 8, 26);
+    font-size: 350%;
+    text-decoration:underline;
+    text-align: center;
+}
+.receta{
+    background-color: blueviolet;
+    color: rgb(17, 8, 26);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:underline;
+    font-size: 250%;
+    text-align: center;
+}
+.prepa{
+    background-color: blueviolet;
+    color: rgb(17, 8, 26);text-indent: 8em;
+    text-align: justify;
+    font-size: 200%;
+    text-decoration: underline;
+}
+.texto{
+    text-align: center;
+    text-indent: 10%;
+    font-size: 150%;
+    font-weight: bold;
+    
+}
+.img{
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+}
+.lista{
+    font-size: 150%;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor{
+   display: flex;
+   margin: 0.2em;
+   padding: auto;
+    
+}
+.frame{
+    margin: 0.1em;
+    padding: 0.1em;
+    height: 300;
+    width: 300;
+    
+}

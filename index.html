@@ -3,39 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Practico </title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    
   </head>
-  <body style="background:#FADBD8; font-family: sans-serif; font-size: 150%;">
+  <body>
     <center>
-      <h1 style="background-color: blueviolet; color: rgb(17, 8, 26);">Empanadas con pasas de uva</h1>
+      <h1 id="titulo">Empanadas con pasas de uva</h1>
     </center>
     <center>
-      <h2 style="background-color: blueviolet; color: rgb(17, 8, 26);">Receta de Chaco</h2>
+      <h2 class="receta">Receta de Chaco</h2>
     </center>
     <center>
-      <img src="./img/empanadas.jpg" alt="">
+      <img src="./img/empanadas.jpg" alt="" class="img">
     </center>
     <center>
       <audio controls src="./audio/Canarios del Chaco.mp3"></audio>
     </center>
     <center>
-      <p>La particularidad de estas empanadas es que están rellenas de carne vacuna o del pescado típico de la región, el dorado, que se utiliza sin espinas y desmenuzado. En ambos casos mezclado con azúcar, aceitunas, pasas de uva, cebolla, huevo y condimentos.</p>
+      <p class="texto">La particularidad de estas empanadas es que están rellenas de carne vacuna o del pescado típico de la región, el dorado, que se utiliza sin espinas y desmenuzado. En ambos casos mezclado con azúcar, aceitunas, pasas de uva, cebolla, huevo y condimentos.</p>
     </center> 
-    <center><h2 style="background-color: blueviolet; color: rgb(17, 8, 26);">Ingredientes</h2></center>
-    <h3 style="background-color: blueviolet; color: rgb(17, 8, 26);text-indent: 8em;">Para la Masa:</h3>
+    <center>
+      <h2 class="receta">Ingredientes</h2>
+    </center>
+    <h3 class="prepa">Para la Masa:</h3>
+    <div class="lista">
       <ul>
         <li>500gr de harina de trigo (tipo 0000)</li>
         <li>½ taza de agua</li>
         <li>½ cucharada de sal</li>
         <li>100gr de grasa bovina</li>
       </ul>
-    <h3 style="background-color: blueviolet; color: rgb(17, 8, 26); text-indent: 8em;">Preparación:</h3>
+    </div>
+      
+    <h3 class="prepa">Preparación:</h3>
+    <div class="lista">
       <ol>
         <li>Colocar una olla al fuego, y mezclar el agua, la sal y la grasa, esperamos que se derrita y lo pasamos a un bol para que entibie.</li>
         <li>Luego en ese bol, agregamos los 500gr de harina, mezclamos con los dedos, hasta lograr una masa lisa.</li>
         <li>Colocamos la masa en una superficie, y la dejamos descansar media hora.</li>
         <li>Luego estirar con un palo de amasar (que no quede muy fina, durante este procedimiento podemos ir agregando harina para que no se pegue) y, por último, cortarla en discos.</li>
       </ol>
-    <h3 style="background-color: blueviolet; color: rgb(17, 8, 26); text-indent: 8em;">Relleno:</h3>
+    </div>
+      
+    <h3 class="prepa">Relleno:</h3>
+    <div class="lista">
       <ul>
         <li>500gr de carne de vaca o capón (se corta a cuchillo)</li>
         <li>500gr de cebolla</li>
@@ -49,7 +61,10 @@
         <li>Huevo duro picado</li>
         <li>Aceite</li>
       </ul> 
-    <h3 style="background-color: blueviolet; color: rgb(17, 8, 26); text-indent: 8em;">Preparación:</h3>
+    </div>
+      
+    <h3 class="prepa">Preparación:</h3>
+    <div class="lista">
       <ol>
         <li>Vertir en una sartén el aceite y saltear la carne cortada a cuchillo durante un momento, hasta notar que esté cocida. Luego, colocar en una fuente.</li>
         <li>Dorar y saltear la cebolla y agregarla a la primera preparación
@@ -59,13 +74,22 @@
         <li>En el centro de los discos de masa, colocar una porción de relleno de carne. Humedecer los bordes con agua y cerrarlos con un repulgue.</li>
         <li>Cocinar en grasa muy caliente. Nos vamos a dar cuenta de esto, ya que, al poner una empanada en grasa a fuego máximo, esta se debe levantar enseguida.</li>
       </ol> 
+    </div>
+      
       <br>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DHdlCgP5HXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="contenedor">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DHdlCgP5HXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frame"></iframe>
+        <br>
+        </div>
+        <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1824702.1480339614!2d-61.18662659314861!3d-26.71655559460768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes%20en%20provincia%20del%20chaco!5e0!3m2!1ses!2sar!4v1665799406680!5m2!1ses!2sar" width="500" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+        </div>
+    </div>
       <br>
       <a href="https://lasempanadas.com.ar/project/chaco/">
         click aqui para mas recetas
       </a>
-      <br>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1824702.1480339614!2d-61.18662659314861!3d-26.71655559460768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes%20en%20provincia%20del%20chaco!5e0!3m2!1ses!2sar!4v1665799406680!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
   </body>
 </html>
