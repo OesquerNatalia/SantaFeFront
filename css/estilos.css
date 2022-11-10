@@ -74,20 +74,19 @@ body{
   
     
 }
-.copy{
+/*.copy{
     text-align: right;
     font-family: 'Quattrocento Sans', sans-serif;
     opacity: 1;
 }
-
+*/
     
 a{
     text-align: right;
 }
 
 .nave{
-    display: flex;
-   
+    display: flex;   
     margin-top: auto;
     padding: 10px;
     border: 1px black solid;
@@ -104,9 +103,33 @@ a{
     
     background-color: azure;
 }
-.what{
+/*.what{
     width: 50px;    
     right: 20px;
     bottom: 20px;
     position: fixed;
+ }*/
+ .head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin: 2px;
+    align-items: center;
+   
+}
+ .logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 20%;
+    justify-content: center;
+ }
+ .icon{
+    width: 50px;
+    
+ }
+ .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
  }
