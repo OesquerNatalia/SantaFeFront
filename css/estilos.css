@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 body{
     background:#FADBD8;
     font-family: sans-serif;   
@@ -8,7 +10,7 @@ body{
    
 }
 
-#titulo{
+.titulo{
     background-color: blueviolet;
     color: rgb(17, 8, 26);
     font-size: 350%;
@@ -46,17 +48,18 @@ body{
 }
 .img{
     justify-content: center;
-    height: 300px;
-    width: 500px;
+    height: 60vh;
+    width: 40vw;
     
 }
 .lista{
     font-size: 150%;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left;
     display: flex;
-    justify-content: space-between;
-    font-family: 'Quattrocento Sans', sans-serif;
+    justify-content: space-between;   
+    font-family: 'Archivo Narrow', sans-serif;
+    
     
 }
 .contenedor{
@@ -69,8 +72,8 @@ body{
 .frame{
     margin: 0.1em;
     padding: 0.1em;
-    height: 530;
-    width: 315;
+    height: 40vh;
+    width: 35vw;
   
     
 }
@@ -118,18 +121,27 @@ a{
    
 }
  .logo{
-    width: 90px;
-    height: 90px;
+    width: 10vw;
+    height: 20vh;
     border-radius: 20%;
     justify-content: center;
  }
  .icon{
-    width: 50px;
+    width: 4vw;
     
+ }
+ .icon:hover{
+    width: 5vw;
+    background-color: black;
  }
  .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+ }
+ .empa:hover{
+    background-color: rgb(13, 13, 13);
+    color: rgb(240, 231, 240);
+    
  }
