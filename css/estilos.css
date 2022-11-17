@@ -48,7 +48,7 @@ body{
 }
 .img{
     justify-content: center;
-    height: 60vh;
+    
     width: 40vw;
     
 }
@@ -121,8 +121,8 @@ a{
    
 }
  .logo{
-    width: 10vw;
-    height: 20vh;
+    width: 5vw;
+    
     border-radius: 20%;
     justify-content: center;
  }
