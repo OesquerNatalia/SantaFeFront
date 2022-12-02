@@ -177,18 +177,22 @@ a {
  
  .container-fluid{
     display: flex;
-    justify-content: flex-end;
+    
+    flex-direction: row-reverse;
     color: #56083f;
     background-color: blueviolet;
     font-size: 1.4em;
     font-family: 'Rubik Microbe', cursive;
     font-weight: bold;
+
  }
  .nav-link{
     font-family: 'Rubik Microbe', cursive;
     font-size: 1.2rem;
     color: #56083f;
     font-weight: bold;
+    display: flex;
+    flex-direction: row-reverse;
  }
  .card{
     padding: 10px;
@@ -324,7 +328,8 @@ a {
         display: none;
     }
     .logo {
-        width: 10%;
+        display: inline;
+        width: 20%;
     }
     .contenedor{
         display: flex;
@@ -342,7 +347,8 @@ a {
 
 @media(max-width: 2000px){
     body{
-        font-family: 'Secular One', sans-serif;       
+        font-family: 'Secular One', sans-serif; 
+        color: black;      
     }
     .titulo{
         font-family: 'Roboto', sans-serif;
