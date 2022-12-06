@@ -16,7 +16,7 @@ function dia(){
     document.getElementById("mas").style.color = "blueviolet";
     document.getElementById("receta").style.backgroundColor ="#180914";
     document.getElementById("receta").style.color = "blueviolet";
-    document.getElementById("texto").style.color = "blue";
+    document.getElementById("texto").style.color = "black";
     document.getElementById("ingre").style.backgroundColor ="#180914";
     document.getElementById("ingre").style.color = "blueviolet";
     document.getElementById("masa").style.backgroundColor ="#180914";
