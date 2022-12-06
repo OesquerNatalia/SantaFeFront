@@ -18,6 +18,7 @@
 <body>
     <header class="head">
         <img src="./img/logo.png" class="logo">
+        <img src="./img/barg.png" class="arg">
         <h1 class="titulo">Empanadas con pasas de uva</h1>
         <div>
             <a href="https://www.facebook.com/nati.oesquer/" target="_blank"><img src="./img/face.png" class="icon"></a>
@@ -28,24 +29,29 @@
         </div>
     </header>
     <br>
-   
-    <br>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Inicio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
-            </div>
+    <div class="d-grid gap-2 d-md-block">
+      <button onclick="nocturno()" class="btn btn-primary" type="button" id="nocturno">Modo Nocturno</button>
+      <button onclick="dia()" class="btn btn-primary" type="button" id="dia">Modo Dia</button>
+    </div>
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid" id="nav">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a id="inicio" class="nav-link active" aria-current="page" href="index.html">Inico</a>
+            <a id="contacto" class="nav-link active" aria-current="page" href="contacto.html" >Contactos</a>
+            <a id="mas" class="nav-link active" href="https://lasempanadas.com.ar/" target="_blank">Mas Recetas</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <br>
+    
     <footer class="footer">
 
         <iframe
@@ -58,12 +64,14 @@
             <a href="https://twitter.com/?lang=es" target="_blank"><img src="./img/twiter.png" class="icon"></a>
             <a href="https://ar.linkedin.com/" target="_blank"><img src="./img/linkedin.png" class="icon"></a>
         </div>
-        <div class="sobremi">
+       <!--<div class="sobremi">
             <h3>Natalia Oesquer</h3>
             <h3>nati.oesquer@hotmail.com</h3>
             <h3>nacris83@outlook.com</h3>
 
         </div>
+      -->
+      <button onclick="copyright()" type="button" class="btn btn-primary btn-lg">© Copyright</button>
     </footer>
     <a href="https://wa.me/5493425475435?text=Hola" target="_blank"><img src="./img/what.png" class="what"></a>
 
@@ -71,6 +79,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+        <script src="./js/javascript.js"></script>
 </body>
 
 </html>

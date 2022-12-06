@@ -11,11 +11,14 @@
 
   <title>Index </title>
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Quattrocento+Sans&display=swap"
     rel="stylesheet">
-    
+  <script>
+    alert("Bienvenidos a mi página con las mejores recetas de empanadas")
+  </script>
 
 </head>
 
@@ -24,7 +27,7 @@
     <img src="./img/logo.png" class="logo">
     <img src="./img/barg.png" class="arg">
 
-    <h1 class="titulo">Empanadas con pasas de uva</h1>
+    <h1 id="titulo" class="titulo">Empanadas con pasas de uva</h1>
     <div>
       <a href="https://www.facebook.com/nati.oesquer/" target="_blank"><img src="./img/face.png" class="icon"></a>
       <a href="https://github.com/OesquerNatalia/SantaFeFront" target="_blank"><img src="./img/git.png"
@@ -43,25 +46,29 @@
       <a href="https://lasempanadas.com.ar/project/misiones/" class="empa" target="_blank">Empanadas de Misiones</a>
     </div>
   </nav>-->
-
+<div class="d-grid gap-2 d-md-block">
+  <button onclick="nocturno()" class="btn btn-primary" type="button" id="nocturno">Modo Nocturno</button>
+  <button onclick="dia()" class="btn btn-primary" type="button" id="dia">Modo Dia</button>
+</div>
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
+    <div class="container-fluid" id="nav">
       <a class="navbar-brand" href="index.html"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="index.html" target="_blank">Inico</a>
-          <a class="nav-link active" aria-current="page" href="contacto.html" target="_blank">Contactos</a>
-          <a class="nav-link active" href="https://lasempanadas.com.ar/" target="_blank">Mas Recetas</a>
+          <a id="inicio" class="nav-link active" aria-current="page" href="index.html">Inico</a>
+          <a id="contacto" class="nav-link active" aria-current="page" href="contacto.html" >Contactos</a>
+          <a id="mas" class="nav-link active" href="https://lasempanadas.com.ar/" target="_blank">Mas Recetas</a>
         </div>
       </div>
     </div>
   </nav>
-<br>
+  <br>
   <section>
-    <h2 class="receta">Receta de Chaco</h2>
+    <h2 id="receta" class="receta">Receta de Chaco</h2>
     <center>
       <img src="./img/empanadas.jpg" alt="" class="img">
     </center>
@@ -69,16 +76,16 @@
       <audio controls src="./audio/Canarios del Chaco.mp3"></audio>
     </center>
     <center>
-      <p class="texto">La particularidad de estas empanadas es que están rellenas de carne vacuna o del pescado típico
+      <p id="texto" class="texto">La particularidad de estas empanadas es que están rellenas de carne vacuna o del pescado típico
         de
         la región, el dorado, que se utiliza sin espinas y desmenuzado. En ambos casos mezclado con azúcar, aceitunas,
         pasas de uva, cebolla, huevo y condimentos.</p>
     </center>
     <center>
-      <h2 class="receta">Ingredientes</h2>
+      <h2 id="ingre" class="receta">Ingredientes</h2>
     </center>
-    <h3 class="prepa">Para la Masa:</h3>
-    <div class="lista">
+    <h3 id="masa" class="prepa">Para la Masa:</h3>
+    <div id="masalist" class="lista">
       <ul>
         <li>500gr de harina de trigo (tipo 0000)</li>
         <li>½ taza de agua</li>
@@ -87,8 +94,8 @@
       </ul>
     </div>
 
-    <h3 class="prepa">Preparación:</h3>
-    <div class="lista">
+    <h3 id="prepa" class="prepa">Preparación:</h3>
+    <div id="prepalist" class="lista">
       <ol>
         <li>Colocar una olla al fuego, y mezclar el agua, la sal y la grasa, esperamos que se derrita y lo pasamos a un
           bol para que entibie.</li>
@@ -99,8 +106,8 @@
       </ol>
     </div>
 
-    <h3 class="prepa">Relleno:</h3>
-    <div class="lista">
+    <h3 id="relleno" class="prepa">Relleno:</h3>
+    <div id="rellenolist" class="lista">
       <ul>
         <li>500gr de carne de vaca o capón (se corta a cuchillo)</li>
         <li>500gr de cebolla</li>
@@ -116,9 +123,9 @@
       </ul>
     </div>
 
-    <h3 class="prepa">Preparación:</h3>
+    <h3 id="otraprepa" class="prepa">Preparación:</h3>
     <br>
-    <div class="lista">
+    <div id="otraprepalist" class="lista">
       <ol>
         <li>Vertir en una sartén el aceite y saltear la carne cortada a cuchillo durante un momento, hasta notar que
           esté
@@ -139,71 +146,78 @@
   <br>
   <aside>
     <div class="contenedor">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <iframe src="https://www.youtube.com/embed/DHdlCgP5HXU" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="frame"></iframe>
 
-      <iframe src="https://www.youtube.com/embed/DHdlCgP5HXU" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-        class="frame"></iframe>
-      <br>
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1824702.1480339614!2d-61.18662659314861!3d-26.71655559460768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes%20en%20provincia%20del%20chaco!5e0!3m2!1ses!2sar!4v1665799406680!5m2!1ses!2sar"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
-
+        </div>
+        <br>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1824702.1480339614!2d-61.18662659314861!3d-26.71655559460768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurantes%20en%20provincia%20del%20chaco!5e0!3m2!1ses!2sar!4v1665799406680!5m2!1ses!2sar"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+        </div>
+      </div>
     </div>
   </aside>
   <br>
   <br>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="./img/guiso.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Guiso Carrero</h5>
-            <p class="card-text"></p>
-            <a href="https://www.cocinayaficiones.com/guiso-carrero-argentino-receta-deliciosa/" target="_blank" class="btn btn-primary">Ir a la receta</a>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="./img/guiso.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Guiso Carrero</h5>
+              <p class="card-text"></p>
+              <a href="https://www.cocinayaficiones.com/guiso-carrero-argentino-receta-deliciosa/" target="_blank"
+                class="btn btn-primary">Ir a la receta</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="./img/locro.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Locro</h5>
-            <p class="card-text"></p>
-            <a href="https://datachaco.com/contenido/23271/dia-patrio-por-que-se-come-locro-el-25-de-mayo" target="_blank" class="btn btn-primary">Ir a la receta</a>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="./img/locro.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Locro</h5>
+              <p class="card-text"></p>
+              <a href="https://datachaco.com/contenido/23271/dia-patrio-por-que-se-come-locro-el-25-de-mayo"
+                target="_blank" class="btn btn-primary">Ir a la receta</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="./img/chipa.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Chipa Guazu</h5>
-            <p class="card-text"></p>
-            <a href="https://cocinarica.com.py/chipa-guasu" target="_blank" class="btn btn-primary">Ir a la receta</a>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="./img/chipa.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chipa Guazu</h5>
+              <p class="card-text"></p>
+              <a href="https://cocinarica.com.py/chipa-guasu" target="_blank" class="btn btn-primary">Ir a la receta</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="card">
-          <img src="./img/pacu.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Pacu</h5>
-            <p class="card-text"></p>
-            <a href="https://www.neahoy.com/2020/10/25/las-11-recetas-chaquenas-que-podes-aprender-a-hacer/" target="_blank" class="btn btn-primary">Ir a la receta</a>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img src="./img/pacu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pacu</h5>
+              <p class="card-text"></p>
+              <a href="https://www.neahoy.com/2020/10/25/las-11-recetas-chaquenas-que-podes-aprender-a-hacer/"
+                target="_blank" class="btn btn-primary">Ir a la receta</a>
+            </div>
           </div>
         </div>
+
       </div>
 
     </div>
+  </section>
+  <br>
+  <br>
 
-  </div>
-</section>
-<br>
-<br>
-  
   <footer class="footer">
 
     <iframe
@@ -218,17 +232,25 @@
     </div>
     <br>
 
-    <div class="sobremi">
+    <!--<div class="sobremi">
       <h3>Natalia Oesquer</h3>
       <h3>nati.oesquer@hotmail.com</h3>
       <h3>nacris83@outlook.com</h3>
-    </div>    
+    </div>
+  -->
+
+<button onclick="copyright()" type="button" class="btn btn-primary btn-lg">© Copyright</button>
 
   </footer>
   <a href="https://wa.me/5493425475435?text=Hola" target="_blank"><img src="./img/what.png" class="what"></a>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/javascript.js"></script>
+
 </body>
 
 </html>
